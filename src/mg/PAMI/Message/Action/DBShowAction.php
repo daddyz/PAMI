@@ -34,7 +34,7 @@ class DBShowAction extends OutgoingMessage
         $this->setKey('Action', 'Command');
         $this->setKey('Command', $command);
 
-        $this->setKey('ActionID', microtime(true));
+        //$this->setKey('ActionID', microtime(true));
 
     }
 
