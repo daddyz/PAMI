@@ -17,7 +17,7 @@ use PAMI\Exception\PAMIException;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class ShowChannelsAction extends OutgoingMessage
+class ShowChannelsAction extends ActionMessage
 {
     public function __construct()
     {

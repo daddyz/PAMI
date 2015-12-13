@@ -17,7 +17,7 @@ use PAMI\Exception\PAMIException;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class DBShowAction extends OutgoingMessage
+class DBShowAction extends ActionMessage
 {
     private $_param = '';
 
