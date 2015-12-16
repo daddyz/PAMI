@@ -35,7 +35,10 @@ class ShowChannelsAction extends ActionMessage
         $result = array();
 
         foreach ($raw as $line) {
-            if (strpos($line, 'Response: Follows') !== false || strpos($line, 'Privilege: Command') !== false || strpos($line, '--END COMMAND--') !== false) {
+            if (strpos($line, 'ActionID: ' . $this->getActionID()) !== false ||
+                strpos($line, 'Response: Follows') !== false ||
+                strpos($line, 'Privilege: Command') !== false ||
+                strpos($line, '--END COMMAND--') !== false) {
                 continue;
             }
 
