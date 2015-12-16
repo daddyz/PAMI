@@ -168,7 +168,7 @@ class ClientImpl implements IClient
 		$errstr = '';
 		$this->_socket = @stream_socket_client(
 			$cString, $errno, $errstr,
-			$this->_cTimeout, STREAM_CLIENT_CONNECT, $this->_context
+			$this->_cTimeout, STREAM_CLIENT_CONNECT | STREAM_CLIENT_PERSISTENT, $this->_context
 		);
 		if ($this->_socket === false) {
 			throw new ClientException('Error connecting to ami: ' . $errstr);

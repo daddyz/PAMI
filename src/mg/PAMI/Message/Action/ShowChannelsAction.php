@@ -21,7 +21,7 @@ class ShowChannelsAction extends ActionMessage
 {
     public function __construct()
     {
-        parent::__construct();
+        parent::__construct('Command');
 
         $command = 'core show channels concise';
 

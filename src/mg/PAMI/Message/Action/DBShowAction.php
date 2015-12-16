@@ -23,7 +23,7 @@ class DBShowAction extends ActionMessage
 
     public function __construct($db)
     {
-        parent::__construct();
+        parent::__construct('Command');
 
         $this->_param = $db;
 
